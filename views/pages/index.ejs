@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <!-- Update the path to include the correct directory -->
     
     <style>
         body {
@@ -19,41 +18,111 @@
             background-color: black;
             color: white;
             font-size: 36px;
+            overflow: hidden; /* Ensure the image doesn't exceed section boundaries */
         }
 
-        /* .title-card {
-            border-radius: 50px;
-            background: #504e4e;
-            box-shadow: 20px -20px 60px #444242, -20px 20px 60px #5c5a5a;
-            padding: 20px;
-            margin: 20px;
+        .section .content {
             display: flex;
-            justify-content: center;
             align-items: center;
-            color: white;
-        } */
+        }
+
+        .section .content .left {
+            width: 50%;
+            padding: 0 20px;
+            margin-right: 300px;
+            margin-left: 100px;
+        }
+
+        .section .content .right {
+            width: 50%;
+        }
+
+        .section .content .right img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .transparent-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 9999;
+        }
+
+        .transparent-header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-family: Monaco;
+        }
+
+        .transparent-header ul li {
+            margin-right: 20px;
+        }
+
+        .transparent-header ul li:last-child {
+            margin-right: 0;
+        }
+
+        .transparent-header ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .transparent-header ul li a:hover {
+            color: #aaaaaa;
+        }
     </style>
 </head>
 <body>
-    <!-- Navigation menu -->
-    <%- include('../partials/header.ejs') %>
+    <!-- Header -->
+    <header class="transparent-header">
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Projects">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Page 1 -->
-    <section class="section" id="section1">
-        <div class="title-card">
-            <h1>Kousha Amouzesh</h1>
+    <section class="section" id="Home">
+        <div class="content">
+            <div class="left">
+                <h1>Kousha Amouzesh</h1>
+                <p style = "font-size: 20px;  line-height: 1.5;"> I am a 20-year-old Computer Science student at Simon Fraser University at Burnaby, British Columbia.
+                    Since I was young, I have been fascinated by the potential of computer science and mathematics, beginning by the first space ship game I made at 14.
+                    As I advance in my academic journey, I am consistently inspired by the boundless opportunities that the intreaction of software development and mathematics can provide
+                </p>
+            </div>
+            <div class="right">
+                <img src="../../photo.png" alt="Your Image">
+            </div>
         </div>
     </section>
 
     <!-- Page 2 -->
-    <section class="section" id="section2">
+    <section class="section" id="Projects">
         <div class="title-card">
             <h1>Second Page</h1>
         </div>
     </section>
 
     <!-- Page 3 -->
-    <section class="section" id="section3">
+    <section class="section" id="Contact">
         <div class="title-card">
             <h1>Third Page</h1>
         </div>
@@ -61,13 +130,13 @@
 
     <script>
         // Smooth scroll to a specific section on navigation link click
-        const navLinks = document.querySelectorAll('nav ul li a');
+        const navLinks = document.querySelectorAll('header.transparent-header nav ul li a');
         navLinks.forEach(link => {
             link.addEventListener('click', (event) => {
                 event.preventDefault();
                 const targetSectionId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetSectionId);
-                targetSection.scrollIntoView({
+                targetSection?.scrollIntoView({
                     behavior: 'smooth'
                 });
             });
