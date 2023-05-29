@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Update the path to include the correct directory -->
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-size: 36px;
+        }
+
+        /* .title-card {
+            border-radius: 50px;
+            background: #504e4e;
+            box-shadow: 20px -20px 60px #444242, -20px 20px 60px #5c5a5a;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        } */
+    </style>
+</head>
+<body>
+    <!-- Navigation menu -->
+    <%- include('../partials/header.ejs') %>
+
+    <!-- Page 1 -->
+    <section class="section" id="section1">
+        <div class="title-card">
+            <h1>Kousha Amouzesh</h1>
+        </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section class="section" id="section2">
+        <div class="title-card">
+            <h1>Second Page</h1>
+        </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section class="section" id="section3">
+        <div class="title-card">
+            <h1>Third Page</h1>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll to a specific section on navigation link click
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetSectionId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetSectionId);
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
