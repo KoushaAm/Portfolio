@@ -3,95 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: black;
-            color: white;
-            font-size: 36px;
-            overflow: hidden; /* Ensure the image doesn't exceed section boundaries */
-        }
-
-        .section .content {
-            display: flex;
-            align-items: center;
-        }
-
-        .section .content .left {
-            width: 50%;
-            padding: 0 20px;
-            margin-right: 300px;
-            margin-left: 100px;
-        }
-
-        .section .content .right {
-            width: 50%;
-        }
-
-        .section .content .right img {
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-
-        .transparent-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 60px;
-            background-color: transparent;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            z-index: 9999;
-        }
-
-        .transparent-header ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            font-family: Monaco;
-        }
-
-        .transparent-header ul li {
-            margin-right: 20px;
-        }
-
-        .transparent-header ul li:last-child {
-            margin-right: 0;
-        }
-
-        .transparent-header ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-
-        .transparent-header ul li a:hover {
-            color: #aaaaaa;
-        }
-    </style>
 </head>
 <body>
     <!-- Header -->
     <header class="transparent-header">
         <nav>
             <ul>
-                <li><a href="#Home">Home</a></li>
+                <li><a href="#AboutMe">Me</a></li>
                 <li><a href="#Projects">Project</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
@@ -99,32 +17,69 @@
     </header>
 
     <!-- Page 1 -->
-    <section class="section" id="Home">
+    <section class="section" id="AboutMe">
         <div class="content">
             <div class="left">
                 <h1>Kousha Amouzesh</h1>
                 <p style = "font-size: 20px;  line-height: 1.5;"> I am a 20-year-old Computer Science student at Simon Fraser University at Burnaby, British Columbia.
                     Since I was young, I have been fascinated by the potential of computer science and mathematics, beginning by the first space ship game I made at 14.
-                    As I advance in my academic journey, I am consistently inspired by the boundless opportunities that the intreaction of software development and mathematics can provide
+                    As I advance in my academic journey, I am consistently inspired by the projects that connect the endless world of mathematics with computer science.
+                    I am currently looking for a co-op position in the ramainder of 2023.
                 </p>
+                <p style = "font-size: 20px;  line-height: 1.5;">Aside my passion for technology and academia, I am highly competitive and dedicated to sports. I have pursued competitive swimming for 8 years.
+                     Moreover, I have been actively engaged in recreational soccer, enjoying the complexity and thrill of the game.
+                     Besides, I grew up with musical intruments in hand, and I play the Persian Tombak, a bit of piano and drums.</p>
             </div>
             <div class="right">
-                <img src="../../photo.png" alt="Your Image">
+                <img src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true" alt="My Image">
             </div>
         </div>
     </section>
 
     <!-- Page 2 -->
     <section class="section" id="Projects">
-        <div class="title-card">
-            <h1>Second Page</h1>
+        
+        <div class="projects-row">
+            <div  style = "width: 100%; margin-bottom: 20px; ">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-card active">
+                <h2>Job Seeking Platform</h2>
+                <p>A website where users can search for jobs at their location and save or apply for their desired jobs. A fully working data base to keep track of job records.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="project-card">
+                <h2>Project 2</h2>
+                <p>Description of Project 2</p>
+                <button>Learn More</button>
+            </div>
+            <div class="project-card">
+                <h2>Project 3</h2>
+                <p>Description of Project 3</p>
+                <button>Learn More</button>
+            </div>
+            <div class="project-card">
+                <h2>Project 4</h2>
+                <p>Description of Project 4</p>
+                <button>Learn More</button>
+            </div>
         </div>
     </section>
+    
 
     <!-- Page 3 -->
     <section class="section" id="Contact">
-        <div class="title-card">
-            <h1>Third Page</h1>
+        <div class="content">
+            <div class="left">
+                <h1 style="margin-right: 50px;">Contact</h1>
+            </div>
+            <div class="right" style = "font-size: 20px; ">
+                <a href = "https://www.linkedin.com/in/kousha-amouzesh-b31445232/" class = "link">My Linkedin</a>
+                <p>koushaamouzesh@gmail.com</p>
+                <p>604-782-2974</p>
+                <p>Vancouver, B.C., Canada</p>
+
+            </div>
         </div>
     </section>
 
@@ -143,4 +98,172 @@
         });
     </script>
 </body>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-size: 36px;
+        overflow: hidden; /* Ensure the image doesn't exceed section boundaries */
+    }
+
+    .section .content {
+        display: flex;
+        align-items: center;
+    }
+
+    .section .content .left {
+        width: 50%;
+        padding: 0 20px;
+        margin-right: 300px;
+        margin-left: 100px;
+    }
+
+    .section .content .right {
+        width: 50%;
+    }
+
+    .section .content .right img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .transparent-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 9999;
+    }
+
+    .transparent-header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-family: Monaco;
+    }
+
+    .transparent-header ul li {
+        margin-right: 20px;
+    }
+
+    .transparent-header ul li:last-child {
+        margin-right: 0;
+    }
+
+    .transparent-header ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .transparent-header ul li a:hover {
+        color: #aaaaaa;
+    }
+
+    .projects-row {
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start; /* Adjust alignment to start */
+        margin-top: 60px; /* Increase the top margin for separation */
+    }
+
+    .project-card {
+        margin-top: 20px;
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+        background-color: #1f1e1e;
+        border-radius: 2px;
+        color: #ffffff; 
+        /* background: rgb(46, 44, 44); */
+        transition: all 300ms;
+    }
+
+    .project-card:hover {
+        opacity: 0.8;
+        transform: scale(1.10);
+    }
+
+
+    .project-card h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .project-card p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+
+    }
+
+    .project-card button {
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .project-card button:hover {
+        background-color: #aaaaaa;
+    }
+
+    .card {
+        width: 190px;
+        height: 254px;
+        background: rgb(46, 44, 44);
+        transition: all 300ms;
+    }
+
+    .card:hover {
+        opacity: 0.8;
+        transform: scale(1.10);
+    }
+
+    .link {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+
+    }
+
+    .link:hover {
+        background-color:rgb(121, 121, 121);
+        
+    }
+
+
+
+
+
+
+</style>
+
 </html>
