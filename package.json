@@ -4,7 +4,7 @@
     "express": "^4.18.2"
   },
   "scripts": {
-    "build": "babel src -d dist"
+    "build": "npx babel src -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1"
