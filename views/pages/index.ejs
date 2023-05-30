@@ -17,18 +17,13 @@
     </header>
 
     <!-- Page 1 -->
+   <!-- Page 1 -->
     <section class="section" id="AboutMe">
         <div class="content">
             <div class="left">
                 <h1>Kousha Amouzesh</h1>
-                <p style = "font-size: 20px;  line-height: 1.5;"> I am a 20-year-old Computer Science student at Simon Fraser University at Burnaby, British Columbia.
-                    Since I was young, I have been fascinated by the potential of computer science and mathematics, beginning by the first space ship game I made at 14.
-                    As I advance in my academic journey, I am consistently inspired by the projects that connect the endless world of mathematics with computer science.
-                    I am currently looking for a co-op position in the ramainder of 2023.
-                </p>
-                <p style = "font-size: 20px;  line-height: 1.5;">Aside my passion for technology and academia, I am highly competitive and dedicated to sports. I have pursued competitive swimming for 8 years.
-                     Moreover, I have been actively engaged in recreational soccer, enjoying the complexity and thrill of the game.
-                     Besides, I grew up with musical intruments in hand, and I play the Persian Tombak, a bit of piano and drums.</p>
+                <p style="font-size: 20px;  line-height: 1.5; margin-bottom: 20px;">I am a 20-year-old Computer Science student at Simon Fraser University at Burnaby, British Columbia. Since I was young, I have been fascinated by the potential of computer science and mathematics, beginning by the first space ship game I made at 14. As I advance in my academic journey, I am consistently inspired by the projects that connect the endless world of mathematics with computer science. I am currently looking for a co-op position in the remainder of 2023.</p>
+                <p style="font-size: 20px;  line-height: 1.5; margin-bottom: 20px;">Aside from my passion for technology and academia, I am highly competitive and dedicated to sports. I have pursued competitive swimming for 8 years. Moreover, I have been actively engaged in recreational soccer, enjoying the complexity and thrill of the game. Besides, I grew up with musical instruments in hand, and I play the Persian Tombak, a bit of piano and drums.</p>
             </div>
             <div class="right">
                 <img src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true" alt="My Image">
@@ -38,9 +33,8 @@
 
     <!-- Page 2 -->
     <section class="section" id="Projects">
-        
-        <div class="projects-row">
-            <div  style = "width: 100%; margin-bottom: 20px; ">
+        <div class="projects-row" style= "margin-top:20px;">
+            <div style="width: 100%; margin-bottom: 20px; margin-top: 80px;">
                 <h1>Projects</h1>
             </div>
             <div class="project-card active">
@@ -49,13 +43,33 @@
                 <button>Learn More</button>
             </div>
             <div class="project-card">
-                <h2>Project 2</h2>
-                <p>Description of Project 2</p>
+                <h2>Math2Latex</h2>
+                <p>Uses deep learning CNN model with pytorch to predict the mathematical symbol and predict upon the input image.</p>
                 <button>Learn More</button>
             </div>
             <div class="project-card">
-                <h2>Project 3</h2>
-                <p>Description of Project 3</p>
+                <h2>Survey Manager</h2>
+                <p>A Java based windows application to manage the created survey by users. The application provides users with opportunites to collect data from their custom surveys and edit them as desired</p>
+                <button>Learn More</button>
+            </div>
+            <div class="project-card">
+                <h2>Path Finding Algorithm Visulization</h2>
+                <p>A C++ program to shortest path between two points in an input image. The app contains comprehensiv unit testing and OOP structure of various common data structures</p>
+                <button>Learn More</button>
+            </div>
+            <div class="project-card">
+                <h2>Food Prediction Model</h2>
+                <p>Built a CNN model on tensorflow to predict the name of 10 different dishes based on their images. The model is trained on 10,000 images</p>
+                <button>Learn More</button>
+            </div>
+            <div class="project-card">
+                <h2>Project 4</h2>
+                <p>Description of Project 4</p>
+                <button>Learn More</button>
+            </div>
+            <div class="project-card">
+                <h2>Project 4</h2>
+                <p>Description of Project 4</p>
                 <button>Learn More</button>
             </div>
             <div class="project-card">
@@ -73,12 +87,12 @@
             <div class="left">
                 <h1 style="margin-right: 50px;">Contact</h1>
             </div>
-            <div class="right" style = "font-size: 20px; ">
-                <a href = "https://www.linkedin.com/in/kousha-amouzesh-b31445232/" class = "link">My Linkedin</a>
+            <div class="right" style="font-size: 20px;">
+                <a href="https://www.linkedin.com/in/kousha-amouzesh-b31445232/" class="link">Linkedin</a>
                 <p>koushaamouzesh@gmail.com</p>
+                <a href="https://github.com/KoushaAm?tab=overview&from=2023-05-01&to=2023-05-28" class="link">Github</a>
                 <p>604-782-2974</p>
                 <p>Vancouver, B.C., Canada</p>
-
             </div>
         </div>
     </section>
@@ -106,7 +120,7 @@
     }
 
     .section {
-        height: 100vh;
+        height: 120vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -123,9 +137,9 @@
 
     .section .content .left {
         width: 50%;
-        padding: 0 20px;
-        margin-right: 300px;
-        margin-left: 100px;
+        padding: 20px;
+        margin-right: 50px;
+        margin-left: 50px;
     }
 
     .section .content .right {
@@ -145,6 +159,7 @@
         width: 100%;
         height: 60px;
         background-color: transparent;
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -178,7 +193,7 @@
     }
 
     .transparent-header ul li a:hover {
-        color: #aaaaaa;
+        color: #626161;
     }
 
     .projects-row {
@@ -186,20 +201,22 @@
         margin-right: 50px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start; /* Adjust alignment to start */
-        margin-top: 60px; /* Increase the top margin for separation */
+        margin-top: 20px; /* Increase the top margin for separation */
     }
 
     .project-card {
         margin-top: 20px;
+        margin-left: 10px; 
+        margin-right: 10px; 
         width: 250px;
         height: 250px;
-        padding: 20px;
         background-color: #1f1e1e;
         border-radius: 2px;
         color: #ffffff; 
-        /* background: rgb(46, 44, 44); */
+        padding: 20px; 
+
         transition: all 300ms;
     }
 
@@ -208,6 +225,13 @@
         transform: scale(1.10);
     }
 
+    @media (max-width: 600px) {
+        .projects-row {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
     .project-card h2 {
         font-size: 20px;
@@ -249,22 +273,10 @@
     }
 
     .link {
-        display: inline-block;
-        color: rgb(255, 255, 255);
+        color: #ffffff;
         text-decoration: none;
-
+        margin-right: 10px;
     }
-
-    .link:hover {
-        background-color:rgb(121, 121, 121);
-        
-    }
-
-
-
-
-
-
 </style>
 
 </html>
