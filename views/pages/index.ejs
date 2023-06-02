@@ -11,7 +11,9 @@
             <ul>
                 <li><a href="#AboutMe">Me</a></li>
                 <li><a href="#Acedamics">Acedamics</a></li>
-                <li><a href="#Projects">Project</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
@@ -37,12 +39,15 @@
     </section>
 
     <section class="section" id="Acedamics">
+        
         <div class="content">
             <div style="font-size: 20px;">
+                <h1 style = "font-size: 50px;">Education</h1>
                 <hr>
                 <div style = "padding: 10px"> 
                     <h3 style = "margin-left: 20px; margin-right: 20px">Simon Fraser University</h3>
                     <p style = "margin-left: 20px; margin-right: 20px">Pursuing BSC in Computer Science</p>
+                    <p style = "margin-left: 20px; margin-right: 20px">GPA: (A) 3.92/4.33</p>
                     <p style = "margin-left: 20px; margin-right: 20px">Expected Graduation: December 2025</p>
                 </div>
                 
@@ -61,15 +66,75 @@
     </section>
 
     <!-- Page 1 -->
-    <section class = "section" id = "Skills">
+    <section class="section" id="Skills">
+     
         <div class="content">
-            <div class="left">
-                <h1>Skills</h1>
-                
-            </div>
-
-
+            
+            <table>
+                <caption style="font-size: 70px;"><strong>Skills</strong></caption>
+                <thead>
+                    <tr >
+                        <th>Languages</th>
+                        <th>Tools</th>
+                        <th>Soft-skils </th>
+                        <!-- <th>Column 4</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>Node.js</td>
+                        <td>Leadership</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>React.js</td>
+                        <td>Teamwork</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Next.js</td>
+                        <td>Planning</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>EJS</td>
+                        <td>Public Speaking</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>PyTorch</td>
+                        <td>Communication</td>
+                    </tr>
+                    <tr>
+                        <td>R</td>
+                        <td>Tensorflow</td>
+                        <td>Agile Development</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Firebase</td>
+                        <td>Fluent in Farsi</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Web APIs</td>
+                        <td>Teaching</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
+
+    <section class="section" id="Experience">
+     
+        <div class="content">
+            <h2>Experience</h2>
+           
+        </div>
+    </section>
+    
 
     <!-- Page 2 -->
     <section class="section" id="Projects">
@@ -359,6 +424,28 @@
         /* color: #626161; */
         background-color: #aaaaaa;
     }
+    table {
+            border-collapse: collapse;
+        }
+
+        table th,
+        table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        table th {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        table tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
 </style>
 
 </html>
